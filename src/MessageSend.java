@@ -21,9 +21,9 @@ public class MessageSend {
 
         Message message = new MimeMessage(session);
         message.setSubject("Email from my Java Program");
-//        message.setContent("<h1>Email from my Java Program</h1>", "text/html");
+        message.setContent("<h1>Email from my Java Program</h1>", "text/html");
 
-        Address addressTo = new InternetAddress("huynguyend19ptit@it gmail.com");
+        Address addressTo = new InternetAddress("huynguyend19ptit@gmail.com");
         message.setRecipient(Message.RecipientType.TO, addressTo);
 
         MimeMultipart mimeMultipart = new MimeMultipart();
